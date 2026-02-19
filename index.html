@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,21 +12,46 @@
     </style>
     <link rel="stylesheet" href="style/styles.css">
 </head>
+
 <body>
-    <header><h1>This is a header</h1></header>
-    <main><h1>Welcome to Tour-Of-DOM</h1>
+    <header>
+        <h1>This is a header</h1>
+    </header>
+    <main>
+        <h1>Welcome to Tour-Of-DOM</h1>
         <ul>
-        <li>Shafayet</li>
-        <li>Bonobash</li>
-        <li>Jalali Set</li>
-        <li>Hmmm</li>
-    </ul>
+            <li>Shafayet</li>
+            <li>Bonobash</li>
+            <li>Jalali Set</li>
+            <li>Hmmm</li>
+        </ul>
     </main>
-    <script>
+    <!-- <script>
         console.log("Hello JavaScript");
         console.log("Hello bole chole gelo");
-    </script>
+    </script> -->
+    <script>
+        const student = {
+            name: 'Tirtho Sarkar',
+            id: 10143,
+            study: function (subject) {
+                console.log('studying subject: ', subject);
+            }
+        }
 
+        const liclection = document.getElementsByTagName('li');
+        console.log(liclection);
+        for (const li of liclection) {
+            console.log(li.innerText);
+        }
+
+        // h1 all tags 
+        const allheading = document.getElementsByTagName('h1');
+        for (const heading of allheading) {
+            console.log(heading .innerText);
+        }
+    </script>
     <script src="js/javascript.js"></script>
 </body>
+
 </html>
