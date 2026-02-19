@@ -9,6 +9,9 @@
         h1 {
             color: gold;
         }
+        #food-title{
+            color: green;
+        }
     </style>
     <link rel="stylesheet" href="style/styles.css">
 </head>
@@ -18,13 +21,26 @@
         <h1>This is a header</h1>
     </header>
     <main>
-        <h1>Welcome to Tour-Of-DOM</h1>
+<section>
+            <h1>Welcome to Tour-Of-DOM</h1>
         <ul>
             <li>Shafayet</li>
             <li>Bonobash</li>
             <li>Jalali Set</li>
             <li>Hmmm</li>
         </ul>
+</section>
+<section>
+    <h1 id="food-title">Foods i love</h1>
+    <ul>
+        <li>Burger</li>
+        <li>Pizza</li>
+        <li>French Fries</li>
+        <li>pasta</li>
+        <li>poteto</li>
+        <li>kacchi</li>
+    </ul>
+</section>
     </main>
     <!-- <script>
         console.log("Hello JavaScript");
@@ -42,14 +58,25 @@
         const liclection = document.getElementsByTagName('li');
         console.log(liclection);
         for (const li of liclection) {
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
 
         // h1 all tags 
         const allheading = document.getElementsByTagName('h1');
         for (const heading of allheading) {
-            console.log(heading .innerText);
+            // console.log(heading .innerText);
         }
+
+
+
+        get element by class name
+        const foodItems = document.getElementsByClassName('food-item'); 
+        console.log(foodItems);
+        
+// get element by id
+        const foodTitle = document.getElementById('food-title');
+        console.log(foodTitle.innerText);
+
     </script>
     <script src="js/javascript.js"></script>
 </body>
